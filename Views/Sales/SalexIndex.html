@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../libs/css/salexIndex.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="txtfirstName">Customer First Name :</label>
+            <input
+              id="txtfirstName"
+              type="text"
+              placeholder="Enter your First Name"
+              required
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="txtlastName">Customer Last Name :</label>
+            <input
+              id="txtlastName"
+              type="text"
+              placeholder="Enter your Last Name"
+              required
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="numcontactInfo">Customer Contact Info :</label>
+            <input
+              id="numcontactInfo"
+              type="number"
+              required
+              placeholder="Enter your Contact info"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="txtcustomerType">Customer Type</label>
+            <select id="txtcustomerType" class="form-control">
+              <option value="Select Customer Type">Select Customer Type</option>
+              <option value="Silver">Silver</option>
+              <option value="Gold">Gold</option>
+              <option value="Platinum">Platinum</option>
+              <option value="Diamond">Diamond</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="txtproductType">Product Name</label>
+            <select id="txtproductType" class="form-control">
+              <option value="Select Customer Type">Select Product Type</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Clothing">Clothing</option>
+              <option value="Food">Food</option>
+              <option value="Cases">Cases</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="productQuantity">Product Quantity</label>
+              <input id="productQuantity" type="number" placeholder="Amount" class="form-control"/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="productPrice">Product Price :</label>
+                <input
+                  id="productPrice"
+                  type="number"
+                  required
+                  placeholder="Amount"
+                  class="form-control"
+                />
+              </div>
+            </div>
+          </div>
+        
+      <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <div class="btnRightSide">
+              <button type="button" class="btn btn-primary" onclick="onButtonSubmitEvent()">Submit</button>
+              <button type="button" class="btn btn-danger" onclick="onButtonCancelEvent()">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../../libs/Jquery/jquery-3.4.1.min.js"></script>
+  <script src="../../Models/customerModel.js"></script>
+  <script src="../../Models/productModel.js"></script>
+  <script src="../../Models/salesModel.js"></script>
+  <script src="../../ViewContext/Sales/salesViewContext.js"></script>
+  <script src="../../Controllers/Sales/salesController.js"></script>
+  <script src="../../Models/productCalcModel.js"></script>
+  <script src="../../Models/discountModel.js"></script>
+  <script src="../../Models/taxModel.js"></script>
+</html>
